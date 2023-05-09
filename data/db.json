@@ -1,0 +1,57 @@
+{
+  "posts": [
+    {
+      "userId": 2,
+      "title": "Min största dröm",
+      "body": "Är att ha en ponny som heter Pinne. Den ska vara gul och stor så både jag och Frida kan rida på den i bergen.",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "title": "Titel 1",
+      "body": "orem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis.\n\norem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis.\norem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis.\norem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis.\norem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis.",
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "title": "Titel 2",
+      "body": "orem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis. orem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis. orem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis. orem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis. orem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis.",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "title": "Titel 3",
+      "body": "orem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis. orem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis. orem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis. orem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis. orem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis.\ncumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis.",
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "title": "Titel 4",
+      "body": "orem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis. orem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis. orem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis. orem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis. orem ipsum dolor sit amet consectetur adipisicing elit. Minus eius architecto cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis. cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis.\ncumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis. cumque ipsam cupiditate distinctio libero voluptatem, ducimus voluptas quis.",
+      "id": 15
+    }
+  ],
+  "users": [
+    {
+      "email": "fridaelisee@hotmail.com",
+      "password": "$2a$10$hGu2q8jRtnkj0XElwHAvhO/gti.DEF/v93v5GRAKdcqMFGWncBZya",
+      "firstName": "Frida",
+      "lastName": "Wieweg",
+      "id": 1
+    },
+    {
+      "email": "Jacob@domain.com",
+      "password": "$2a$10$8/90fub6GYd4VR45KAgMzeugKI5tfhk9LHFEIspQeL9JGHi//YeKu",
+      "firstName": "Jacob",
+      "lastName": "Johansson",
+      "id": 2
+    },
+    {
+      "email": "Johanna@domain.com",
+      "password": "$2a$10$8ErO/NlN1g8pROdcxtkkWexfpO98EcKJXwGuITZh/cSP.jOCsm27q",
+      "firstName": "Johanna",
+      "lastName": "Lagerberg",
+      "id": 3
+    }
+  ]
+}
