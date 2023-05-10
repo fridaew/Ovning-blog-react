@@ -36,7 +36,7 @@ const Create = ({ setPosts, user }) => {
       const newPost = res.data
       console.log(newPost)
       if (res.status === 201) {
-        navigate('/')
+        navigate('/posts')
       }
 
       setTitle('') //tömmer input
