@@ -43,7 +43,8 @@ const Login = ({ setUser, user }) => {
     e.preventDefault()
   
     try {
-      const res = await axios.post('http://localhost:3000/login', formData) // MED AXIOS
+      // const res = await axios.post('http://localhost:3000/login', formData) // MED AXIOS
+      const res = await axios.post('https://rune-branch-mollusk.glitch.me', formData);
       setUser(res.data)
       navigate(state?.from || '/')
     } catch (error) {

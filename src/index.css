@@ -77,17 +77,18 @@ body {
     align-items: center;
     color: #444;
     font-family: 'Lora', serif;
+    text-align: center;
 }
 
 .home .header-title p {
-    position: absolute;
-    top: 20%;
+    position: relative; 
     font-size: 20px;
-}
+    margin-bottom: 10px; 
+  }
 
 .home .header-title h3 {
     position: absolute;
-    top: 26%;
+    top: 22%;
     font-size: 80px;
     z-index: 1;
 }
@@ -100,6 +101,8 @@ body {
     object-fit: cover;
     
 }
+
+
 
 .homepage-btn{
     position: relative;
@@ -121,7 +124,46 @@ body {
    
 }
 
-/* FORM-BLOGSITE*/
+
+
+@media (max-width: 600px) {
+    .home .header-title {
+      margin-bottom: 20px; /* Add some margin at the bottom for smaller screens */
+    }
+  
+    .home .header-title p {
+      font-size: 16px; /* Reduce the font size for smaller screens */
+    }
+  
+    .home .header-title h3 {
+      font-size: 30px; /* Reduce the font size for smaller screens */
+      top: 26%;
+      font-size: 50px;
+      z-index: 1;
+    }
+  
+    .homepage-btn {
+      width: 160px; /* Make the button occupy the entire width for smaller screens */
+      margin-top: 200px; /* Reduce the top margin for smaller screens */
+      left: 180px;
+      
+    }
+
+    .home img {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        object-fit: cover;
+        z-index: -1; /* Add a negative z-index to ensure the image stays in the background */
+      }
+
+
+  }
+
+
+
+
+/* POST-FORM */
 
 
 form h2 {
@@ -161,12 +203,9 @@ form {
     background-color: #f8f5ef;
 }
 
-
-
 .form-control:focus {
     outline: none;
 }
-
 
 .form-btn {
     border: 0;
@@ -177,7 +216,6 @@ form {
     color: #fff;
     cursor: pointer;
     width: 100px;
-    
 }
 
 .form-btn:hover {
@@ -185,26 +223,23 @@ form {
 }
 
 
-/*  */
+/* REGISTER / LOGIN - FORM */
 
 
- 
-
-
-/* REGISTER / LOGIN*/
-
-.register-form-page{
+.register-form-page {
     display: flex;
+    flex-direction: column; 
     gap: 1rem;
-}
+  }
 
-.register-form-page .form-heading{
-    margin-left: 300px;
+.register-form-page .form-heading {
+    margin-left: auto; 
+    margin-right: auto; 
     position: relative;
-    top:50px;
+    top: 50px;
     font-family: 'Josefin Sans', sans-serif;
-}
-
+    text-align: center; 
+  }
 .form-heading h1{
     margin-bottom: 20px;
 }
@@ -223,7 +258,7 @@ form {
 .form-group-register label,
 .form-group-register input {
     display: block;
-    width: 70%;
+    width: 100%;
 }
 
 .form-group-register label{
@@ -247,7 +282,6 @@ form {
     color: #fff;
     cursor: pointer;
     width: 90px;
-    
 }
 
 .login-btn:hover {
@@ -255,6 +289,20 @@ form {
 }
 
 
+
+@media (max-width: 600px) {
+    .register-form-page {
+      gap: 0.5rem; /* Reduce the gap between elements for smaller screens */
+    }
+  
+    .register-form-page .form-heading {
+      top: 20px; /* Adjust the position of the form heading */
+    }
+  
+    .login-btn {
+      width: 100%; /* Make the button occupy the entire width for smaller screens */
+    }
+  }
 
 
 
@@ -299,7 +347,6 @@ form {
     width: 100px;
     /* border: 0; */
     border: 2px solid #f0430f;
-    
     border-radius: 6px ;
     padding: 10px;
     margin-top: 20px;
@@ -313,7 +360,6 @@ form {
     display: flex;
     flex-direction: column;
     margin: 30px;
-    
 }
 
 
@@ -341,6 +387,7 @@ form {
 }
 
 /* ERROR */
+
 .error{
     color: firebrick;
     font-size: 1rem;
