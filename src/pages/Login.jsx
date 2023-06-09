@@ -8,12 +8,15 @@ const Login = ({ setUser, user }) => {
   const [errorMessage, setErrorMessage] = useState(null);
 
 
+
+
+
   if (user != null) {
     return <Navigate to="/" />
   }
 
   const navigate = useNavigate()
-  const { state } =useLocation()
+  const { state } = useLocation()
 
 
   const [formData, setFormData] = useState({
