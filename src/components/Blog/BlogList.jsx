@@ -26,7 +26,7 @@ const BlogList = ({user}) => {
   }, [])
 
   const handleDelete = async (id) => {
-    const res = await fetch(`https://blog-test-api-nt7u.onrender.com/posts${id}`, {
+    const res = await fetch(`https://blog-test-api-nt7u.onrender.com/posts/${id}`, {
       method: 'DELETE',
     })
     if (!res.ok) {
