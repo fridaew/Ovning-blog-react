@@ -11,7 +11,7 @@ const Details = () => {
   useEffect(() => {
 
     const getPost = async () => {
-      const res = await fetch('http://localhost:3000/posts/' + id)
+      const res = await fetch('https://blog-test-api-nt7u.onrender.com/posts/' + id)
       const data = await res.json()
       setPost(data)
     }

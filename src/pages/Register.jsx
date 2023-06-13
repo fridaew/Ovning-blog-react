@@ -36,7 +36,7 @@ const handleChange = e =>{
 const handleSubmit = async e =>{
     e.preventDefault()
 
-    const res = await axios.post('http://localhost:3000/register', formData) // MED AXIOS
+    const res = await axios.post('https://blog-test-api-nt7u.onrender.com/register', formData) // MED AXIOS
     console.log(res);
 
     console.log(res.data); //om vi får positivt svar kommer vi ha data i res.data

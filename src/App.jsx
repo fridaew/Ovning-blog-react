@@ -32,8 +32,8 @@ const App = () => {
           <Route path='/posts' element={<BlogList user ={user} posts={posts} setPosts={setPosts}/>} />
           <Route path='/posts/:id' element={<Details user ={user} posts={posts} setPosts={setPosts}/>} />
 
-          <Route path='login' element={<Login user={user} setUser={setUser}/>} />
-          <Route path='register' element={<Register user={user} setUser={setUser}/>} />
+          <Route path='/login' element={<Login user={user} setUser={setUser}/>} />
+          <Route path='/register' element={<Register user={user} setUser={setUser}/>} />
         </Routes>
     </div>
 

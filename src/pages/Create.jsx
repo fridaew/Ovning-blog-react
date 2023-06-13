@@ -28,7 +28,7 @@ const Create = ({ setPosts, user }) => {
  
 
     try {
-      const res = await axios.post('http://localhost:3000/posts', post, {
+      const res = await axios.post('https://blog-test-api-nt7u.onrender.com/posts', post, {
         headers: {
           authorization: 'Bearer' + user.token
         }

@@ -13,7 +13,7 @@ const BlogList = ({user}) => {
 
   useEffect(() => {
     const getPosts = async () => {
-      const res = await fetch('http://localhost:3000/posts?userId='+ user.user.id) // hämtar bara post från den som är inloggad
+      const res = await fetch('https://blog-test-api-nt7u.onrender.com/posts?userId='+ user.user.id) // hämtar bara post från den som är inloggad
       if (!res.ok) {
         console.log(res.statusText);
         return
@@ -26,7 +26,7 @@ const BlogList = ({user}) => {
   }, [])
 
   const handleDelete = async (id) => {
-    const res = await fetch(`http://localhost:3000/posts/${id}`, {
+    const res = await fetch(`https://blog-test-api-nt7u.onrender.com/posts${id}`, {
       method: 'DELETE',
     })
     if (!res.ok) {
