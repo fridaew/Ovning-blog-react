@@ -88,7 +88,7 @@ body {
 
 .home .header-title h3 {
     position: absolute;
-    top: 22%;
+    top: 33%;
     font-size: 80px;
     z-index: 1;
 }
@@ -136,10 +136,11 @@ body {
     }
   
     .home .header-title h3 {
-      font-size: 30px; /* Reduce the font size for smaller screens */
-      top: 26%;
+      top: 28%;
       font-size: 50px;
       z-index: 1;
+      text-align: center;
+
     }
   
     .homepage-btn {
@@ -155,6 +156,28 @@ body {
         left: 0;
         object-fit: cover;
         z-index: -1; /* Add a negative z-index to ensure the image stays in the background */
+      }
+
+
+  }
+@media (min-width:600px)and (max-width: 2000px) {
+  
+    .home .header-title h3 {
+      font-size: 50px;
+      z-index: 1;
+      text-align: center;
+      top:220px;
+
+    }
+
+
+    .home img {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        object-fit: cover;
+        z-index: -1; 
+        height: 100vh;
       }
 
 
