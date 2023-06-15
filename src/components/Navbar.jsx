@@ -12,8 +12,8 @@ const Navbar = ({ user , setUser}) => {
         {user ? ( // Om user är true så isar vi detta (truthy värde)
           <>
             <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/add">Create New Post</NavLink></li>
-            <li><NavLink to="/posts">Wiew all posts</NavLink></li>
+            <li><NavLink to="/add">Create post</NavLink></li>
+            <li><NavLink to="/posts">Wiew all</NavLink></li>
             <li><Link to="/login" onClick={()=> setUser(null)}>Logout</Link></li> 
             {/* När vi klickar på logga ut knappen tömmer vi våran användare och går tillbaka till null,sen så kommer vi tillbaka till logga in sidan(se ovan) */}
           </>

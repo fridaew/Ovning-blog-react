@@ -65,45 +65,40 @@ body {
     color: #444;
 }
 
-@media (max-width: 600px) {
 
-    
-.navbar {
-   
-    padding: 1rem;
-    font-family: 'Josefin Sans', sans-serif;
+
+
+@media (max-width: 610px) {
+    .navbar {
+        padding: 1rem;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .navbar a {
+        color: #444;
+        text-decoration: none;
+        padding: 0.5rem; /* Reduce the padding for the links */
+        font-size: 1rem; /* Decrease the font size for the links */
+    }
+
+    .navbar .pen-logo {
+        font-size: 1rem; /* Decrease the font size for the pen logo */
+    }
+
+    .navbar h2 {
+        font-size: 1rem; /* Decrease the font size for the heading */
+        margin-left: 5px; /* Reduce the left margin for the heading */
+    }
+
+    .navbar ul a {
+        text-decoration: none;
+        padding: 0.5rem .3rem; 
+        color: #444;
+    }
 }
 
-.navbar a {
-    color: #444;
-    text-decoration: none;
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    font-size: 1rem;
-}
-
-.navbar ul a {
-    text-decoration: none;
-    padding: .2rem;
-    color: #444;
 
 
-}
-
-.navbar .pen-logo {
-    font-size: 1.2rem;
-    
-}
-
-.navbar h2 {
-    font-size: 1.5rem;
-  
-}
-
-  }
 
 /* HOMEPAGE */
 
@@ -143,16 +138,16 @@ body {
 }
 
 
-
-.homepage-btn{
+.homepage-btn {
     position: relative;
     width: 160px;
     height: 50px;
-    left:45%;
+    left: 50%;
+    transform: translateX(-50%); 
     margin-top: 200px;
     border-radius: 15px;
     border: none;
-    background-color:#f8693e;
+    background-color: #f8693e;
     color: #fff;
     font-size: 1.3rem;
     cursor: pointer;
@@ -166,36 +161,31 @@ body {
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 610px) {
     .home .header-title {
-      margin-bottom: 20px; /* Add some margin at the bottom for smaller screens */
+      margin-bottom: 20px; 
     }
   
     .home .header-title p {
-      font-size: 16px; /* Reduce the font size for smaller screens */
+      font-size: 16px; 
     }
   
     .home .header-title h3 {
-      top: 28%;
+      top: 24%;
       font-size: 50px;
       z-index: 1;
       text-align: center;
 
     }
-  
-    .homepage-btn {
-      width: 160px; /* Make the button occupy the entire width for smaller screens */
-      margin-top: 200px; /* Reduce the top margin for smaller screens */
-      left: 180px;
-      
-    }
+
 
     .home img {
         position: fixed;
         width: 100%;
         left: 0;
         object-fit: cover;
-        z-index: -1; /* Add a negative z-index to ensure the image stays in the background */
+        height: 50%;
+        z-index: -1; 
       }
 
 
@@ -219,12 +209,7 @@ body {
         z-index: -1; 
         height: 100vh;
       }
-
-
-  }
-
-
-
+}
 
 /* POST-FORM */
 
@@ -354,18 +339,30 @@ form {
 
 
 @media (max-width: 600px) {
+
+
     .register-form-page {
-      gap: 0.5rem; /* Reduce the gap between elements for smaller screens */
-    }
-  
-    .register-form-page .form-heading {
-      top: 20px; /* Adjust the position of the form heading */
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 1rem; 
+      }
+      
+      .form {
+        width: 100%;
+        max-width: 500px; 
+      }
+    
+      
   
     .login-btn {
-      width: 100%; /* Make the button occupy the entire width for smaller screens */
+      width: 100%; 
     }
+    
   }
+
+
 
 
 
@@ -408,7 +405,6 @@ form {
 
 .remove-btn{
     width: 100px;
-    /* border: 0; */
     border: 2px solid #f0430f;
     border-radius: 6px ;
     padding: 10px;
@@ -448,8 +444,6 @@ form {
 }
 
 .details-img{
-    
-    /* position: relative; */
     width: 100%;
     bottom:40px;
     height: 280px;
