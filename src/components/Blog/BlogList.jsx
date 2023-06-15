@@ -13,7 +13,8 @@ const BlogList = ({user}) => {
 
   useEffect(() => {
     const getPosts = async () => {
-      const res = await fetch('https://blog-test-api-nt7u.onrender.com/posts?userId='+ user.user.id) // hämtar bara post från den som är inloggad
+      // const res = await fetch('https://blog-test-api-nt7u.onrender.com/posts?userId='+ user.user.id) // hämtar bara post från den som är inloggad
+      const res = await fetch('https://blog-test-api-nt7u.onrender.com/posts') // hämtar bara post från den som är inloggad
       if (!res.ok) {
         console.log(res.statusText);
         return

@@ -36,7 +36,7 @@ const handleChange = e =>{
 const handleSubmit = async e =>{
     e.preventDefault()
 
-    const res = await axios.post('https://blog-test-api-nt7u.onrender.com/register', formData) // MED AXIOS
+    const res = await axios.post('https://blog-test-api-nt7u.onrender.com/users/register', formData) // MED AXIOS
     console.log(res);
 
     console.log(res.data); //om vi får positivt svar kommer vi ha data i res.data
@@ -44,22 +44,9 @@ const handleSubmit = async e =>{
         setUser(res.data)
         // localStorage.setItem('token', res.data.token) //sparar in våran token 
         // navigate('/') //navigerar till startsidan om res.data OK
-        navigate(state?.from || '/')
+        navigate('/login')
     }
 
-
-    // MED FETCH
-
-    // const res = await fetch('http://localhost:3000/users/register', { 
-    //     method: 'post',
-    //     headers: {
-    //         'content-type': 'application/json'
-    //     },
-
-    //     body:JSON.stringify(formData)
-    // })
-
-    // const data = await res.json()
 }
 
 

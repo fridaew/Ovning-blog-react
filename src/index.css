@@ -65,6 +65,46 @@ body {
     color: #444;
 }
 
+@media (max-width: 600px) {
+
+    
+.navbar {
+   
+    padding: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navbar a {
+    color: #444;
+    text-decoration: none;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    padding: .2rem;
+    color: #444;
+
+
+}
+
+.navbar .pen-logo {
+    font-size: 1.2rem;
+    
+}
+
+.navbar h2 {
+    font-size: 1.5rem;
+  
+}
+
+  }
+
 /* HOMEPAGE */
 
 .home {
@@ -385,6 +425,16 @@ form {
     margin: 30px;
 }
 
+
+@media (max-width:600px) {
+ 
+    .Blogs {
+        display: flex;
+        flex-direction: column;        
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+  }
 
 
 /* DETAILS */
